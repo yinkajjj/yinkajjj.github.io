@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Joel Onarinde — Portfolio</title>
+  <meta name="description" content="IT admin & creator. Portfolio with About, GitHub, Video, Gallery and Contact." />
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="portfolio.css" />
+</head>
+<body class="Background">
+
+  <!-- Navbar -->
+  <div class="Navbar">
+    <div class="Nav__inner">
+      <a class="brand" href="#Home">Joel<span class="accent">Onarinde</span></a>
+      <button class="nav-toggle" aria-label="Menu">☰</button>
+      <nav class="Nav__links" aria-label="Primary">
+        <a class="active" href="#Home">Home</a>
+        <a href="#About">About</a>
+        <a href="#GitHub">GitHub</a>
+        <a href="#Video">Video</a>
+        <a href="#Gallery">Gallery</a>
+        <a href="#Contact">Contact</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <header id="Home" class="Hero">
+    <img class="hero-poster" src="img/community-moment.jpg" alt="Community moment">
+    <div class="overlay"></div>
+    <div class="Video_Text">
+      <h1>Joel Onarinde</h1>
+      <p class="intro">IT Administrator & creator — simplifying complex tech into practical solutions.</p>
+      <p class="cta">
+        <a class="btn" href="#Contact">Work with me</a>
+        <a class="btn ghost" href="https://github.com/yinkajjj" target="_blank" rel="noopener">GitHub</a>
+      </p>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section class="Row" id="About">
+    <div class="Column_2">
+      <img src="img/it-setup-day.jpg" alt="Device imaging and setup day">
+    </div>
+    <div class="Column_1">
+      <h1>About</h1>
+      <p>I blend reliable IT operations (Microsoft 365, device lifecycle & documentation)
+         with clean web content (HTML/CSS/JS, WordPress, visuals & short video).</p>
+      <ul class="bullets">
+        <li>Microsoft 365 • device imaging • security basics</li>
+        <li>HTML/CSS/JS • WordPress • content & visuals</li>
+        <li>Community & care storytelling</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- GitHub -->
+  <section class="Row" id="GitHub">
+    <div class="Column_1">
+      <h1>GitHub</h1>
+      <p>See my coding projects:</p>
+      <p class="center"><a class="btn" href="https://github.com/yinkajjj" target="_blank" rel="noopener">github.com/yinkajjj</a></p>
+    </div>
+    <div class="Column_2 logo-col">
+      <a href="https://github.com/yinkajjj" target="_blank" rel="noopener">
+        <img class="github-logo" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub Logo">
+      </a>
+    </div>
+  </section>
+
+  <!-- Video -->
+  <section class="Row" id="Video">
+    <div class="Column_1">
+      <h1>Featured Video</h1>
+      <p class="muted">Quick highlight from my workflow.</p>
+      <div class="VideoEmbed">
+        <iframe
+          src="https://www.youtube.com/embed/Ymy9PDA_dQc?autoplay=1&mute=1&controls=0&modestbranding=1&playsinline=1&loop=1&playlist=Ymy9PDA_dQc"
+          title="Joel Onarinde — YouTube Short"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div class="Column_2">
+      <img src="img/creative-work.jpg" alt="Creative work and content">
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="Row" id="Gallery">
+    <div class="Column_1">
+      <h1>Gallery</h1>
+      <p class="muted">Click to view fullscreen; use ← → or Esc.</p>
+      <div class="gallery">
+        <a href="img/community-moment.jpg" data-lb="1"><img src="img/community-moment.jpg" alt="Community moment"></a>
+        <a href="img/it-setup-day.jpg" data-lb="2"><img src="img/it-setup-day.jpg" alt="IT setup day"></a>
+        <a href="img/creative-work.jpg" data-lb="3"><img src="img/creative-work.jpg" alt="Creative work"></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="Row" id="Contact">
+    <div class="Column_2 Column_tall">
+      <img src="img/creative-work.jpg" alt="Creative work">
+    </div>
+    <div class="Column_1 Column_tall">
+      <h1>Contact</h1>
+      <form id="contactForm" novalidate>
+        <label>Name: <input type="text" name="Name" required></label>
+        <label>Email: <input type="email" name="Email" required></label>
+        <label>Message: <textarea name="Message" rows="6" required></textarea></label>
+        <div class="actions">
+          <button class="btn" type="submit">SUBMIT</button>
+          <a class="btn ghost" href="https://uk.linkedin.com/in/joel-onarinde-4b5614ba" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+        <p id="formMsg" class="muted" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Lightbox modal -->
+  <div id="lightbox" class="lightbox" hidden>
+    <button class="lb-close" aria-label="Close">×</button>
+    <img alt="">
+  </div>
+
+  <footer>
+    <p class="center">&copy; <span id="year"></span> Joel Onarinde · <a href="#Home">Back to top</a></p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
